@@ -10,7 +10,7 @@
             <h1 class="justify-start text-yellow-800 font-bold text-6xl font-serif lg:w-full">Leaf &amp; Brew Box</h1>
             <h2 class="left-5 text-yellow-800 text-3xl font-bold font-mono lg:w-full">Preferences</h2>
             
-            <form class="p-4 bg-white w-11/12 rounded lg:w-full lg:flex lg:flex-wrap">
+            <form class="p-4 bg-white w-11/12 lg:m-4 rounded lg:w-full lg:flex lg:flex-wrap">
                 
                 <!-- SUBSCRIPTION -->
                 <fieldset class="lg:w-1/2 lg:p-4">
@@ -22,10 +22,10 @@
                     <!-- SUBSCRIPTION TIER -->
                     <section class="flex flex-col">
                         <label class="font-bold text-xl">Subscription Tier</label>
-                        <select class="border-2 border-yellow-600 p-2">
-                            <option>Basic (1 tea per month)</option>
-                            <option>Standard (3 teas per month)</option>
-                            <option>Deluxe (5 teas per month)</option>
+                        <select class="cursor-pointer border-2 border-yellow-600 p-2">
+                            <option class="hover:bg-yellow-600 hover:text-black">Basic (1 tea per month)</option>
+                            <option class="hover:bg-yellow-600 hover:text-black">Standard (3 teas per month)</option>
+                            <option class="hover:bg-yellow-600 hover:text-black">Deluxe (5 teas per month)</option>
                         </select>
                     </section>
                     
@@ -34,15 +34,15 @@
                         <p class="font-bold text-xl">Taste Preference</p>
                         <section>
                             <section>
-                                <input type="checkbox" id="fruity" name="fruity"/>
+                                <input class="cursor-pointer" type="checkbox" id="fruity" name="fruity"/>
                                 <label for="fruity">Fruity</label>
                             </section>
                             <section>
-                                <input type="checkbox" id="floral" name="floral"/>
+                                <input class="cursor-pointer" type="checkbox" id="floral" name="floral"/>
                                 <label for="floral">Floral</label>
                             </section>
                             <section>
-                                <input type="checkbox" id="sweet" name="sweet"/>
+                                <input class="cursor-pointer" type="checkbox" id="sweet" name="sweet"/>
                                 <label for="sweet">Sweet</label>
                             </section>
                         </section>
@@ -53,15 +53,15 @@
                         <p class="font-bold text-xl">Loose Leaf or Bagged?</p>
                         <section>
                             <section>
-                                <input type="radio" id="loose" name="tea-preference"/>
+                                <input class="cursor-pointer" type="radio" id="loose" name="tea-preference"/>
                                 <label for="loose">Loose</label>
                             </section>
                             <section>
-                                <input type="radio" id="bagged" name="tea-preference"/>
+                                <input class="cursor-pointer" type="radio" id="bagged" name="tea-preference"/>
                                 <label for="bagged">Bagged</label>
                             </section>
                             <section>
-                                <input type="radio" id="either" name="tea-preference"/>
+                                <input class="cursor-pointer" type="radio" id="either" name="tea-preference"/>
                                 <label for="either">Either</label>
                             </section>
                         </section>
@@ -124,7 +124,7 @@
                 </fieldset>
                 
                 <!-- SAVE BUTTON -->
-                <input class="lg:w-3/5 lg:mx-auto w-full p-2 bg-yellow-700 text-white font-bold text-xl rounded" type="submit" value="Save Preferences"/>
+                <input class="cursor-pointer lg:w-3/5 hover:bg-white hover:text-yellow-600 hover:border-2 hover:border-yellow-600 lg:mx-auto w-full p-2 bg-yellow-700 text-white font-bold text-xl rounded" type="submit" value="Save Preferences"/>
                 
                 <!-- FORM ICON -->
             
