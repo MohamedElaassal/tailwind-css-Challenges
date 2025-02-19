@@ -6,21 +6,23 @@
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
     <body class="bg-white">
-        <main class="bg-amber-100 flex flex-col items-center w-11/12 mx-auto border-2 border-amber-200  fill-yellow-600 mt-8  ">
-            <h1 class="justify-start text-yellow-800 font-bold text-6xl font-serif ">Leaf &amp; Brew Box</h1>
-            <h2 class="left-5 text-yellow-800 text-3xl font-bold font-mono">Preferences</h2>
+        <main class="bg-amber-100 flex flex-col items-center w-11/12 mx-auto border-2 border-amber-200 fill-yellow-600 mt-8 lg:flex-row lg:flex-wrap lg:justify-between">
+            <h1 class="justify-start text-yellow-800 font-bold text-6xl font-serif lg:w-full">Leaf &amp; Brew Box</h1>
+            <h2 class="left-5 text-yellow-800 text-3xl font-bold font-mono lg:w-full">Preferences</h2>
             
-            <form class="p-4 bg-white w-11/12 rounded">
+            <form class="p-4 bg-white w-11/12 rounded lg:w-full lg:flex lg:flex-wrap">
                 
                 <!-- SUBSCRIPTION -->
-                <fieldset>
-                     <legend class="font-bold text-yellow-600 text-xl font-serif">Subscription</legend>
-                     <svg xmlns="http://www.w3.org/2000/svg" height="100px" viewBox="0 -960 960 960" width="100px"><path d="M160-120v-80h640v80H160Zm560-520h80v-120h-80v120ZM320-280q-66 0-113-47t-47-113v-400h200v96l-72 58q-2 2-8 16v170q0 8 6 14t14 6h160q8 0 14-6t6-14v-170q0-2-8-16l-72-58v-96h400q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Z"/></svg>
+                <fieldset class="lg:w-1/2 lg:p-4">
+                   <div class="flex flex-center justify-between">
+                    <legend class="font-bold text-yellow-600 text-xl font-serif">Subscription</legend>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="100px"><path d="M160-120v-80h640v80H160Zm560-520h80v-120h-80v120ZM320-280q-66 0-113-47t-47-113v-400h200v96l-72 58q-2 2-8 16v170q0 8 6 14t14 6h160q8 0 14-6t6-14v-170q0-2-8-16l-72-58v-96h400q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Z"/></svg>
+                   </div>
 
                     <!-- SUBSCRIPTION TIER -->
-                    <section class="flex flex-col ">
+                    <section class="flex flex-col">
                         <label class="font-bold text-xl">Subscription Tier</label>
-                        <select>
+                        <select class="border-2 border-yellow-600 p-2">
                             <option>Basic (1 tea per month)</option>
                             <option>Standard (3 teas per month)</option>
                             <option>Deluxe (5 teas per month)</option>
@@ -28,7 +30,7 @@
                     </section>
                     
                     <!-- TASTE PREFERENCE -->
-                    <section class="flex flex-col ">
+                    <section class="flex flex-col">
                         <p class="font-bold text-xl">Taste Preference</p>
                         <section>
                             <section>
@@ -47,7 +49,7 @@
                     </section>
                     
                     <!-- LOOSE OR BAGGED -->
-                    <section class="flex flex-col ">
+                    <section class="flex flex-col">
                         <p class="font-bold text-xl">Loose Leaf or Bagged?</p>
                         <section>
                             <section>
@@ -66,47 +68,46 @@
                     </section>
                     
                     <!-- DIETARY RESTRICTIONS -->
-                    <section class="font-bold text-xl flex flex-col ">
+                    <section class="font-bold text-xl flex flex-col">
                         <label for="delivery_instructions">Dietary Restrictions</label>
-                        <textarea id="delivery_instructions"></textarea>
+                        <textarea class="border-2 border-yellow-600 p-4" id="delivery_instructions"></textarea>
                     </section>
                     
                 </fieldset>
                 
                 <!-- CUSTOMER DETAILS -->
-                <fieldset>
+                <fieldset class="lg:w-1/2 lg:p-4">
                     <div class="flex items-center justify-between">
                         <legend class="font-bold text-yellow-600 text-xl font-serif">Details</legend>
                 <!-- DELIVERY ICON -->
                         <svg class="" xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px"><path d="M240-160q-50 0-85-35t-35-85H40v-440q0-33 23.5-56.5T120-800h560v160h120l120 160v200h-80q0 50-35 85t-85 35q-50 0-85-35t-35-85H360q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T280-280q0-17-11.5-28.5T240-320q-17 0-28.5 11.5T200-280q0 17 11.5 28.5T240-240Zm480 0q17 0 28.5-11.5T760-280q0-17-11.5-28.5T720-320q-17 0-28.5 11.5T680-280q0 17 11.5 28.5T720-240Zm-40-200h170l-90-120h-80v120Z"/></svg>
-
                     </div>
 
                     <!-- NAME -->
-                    <section class="flex flex-col ">
+                    <section class="flex flex-col">
                         <label class="font-bold text-xl">Full Name</label>
-                        <input type="text" value="Earl Greyson"/>
+                        <input class="border-2 border-yellow-600 p-2" type="text" value="Earl Greyson"/>
                     </section>
                     
                     <!-- EMAIL -->
-                    <section class="flex flex-col ">
-                        <label  class="font-bold text-xl">Email</label>
-                        <input type="email" value="earlgreyson@tealovers.com"/>
+                    <section class="flex flex-col">
+                        <label class="font-bold text-xl">Email</label>
+                        <input class="border-2 border-yellow-600 p-2" type="email" value="earlgreyson@tealovers.com"/>
                     </section>
                     
                     <!-- DELIVERY -->
-                    <section>
+                    <section class="border-2 border-yellow-600 p-3 mt-3">
                         <h3 class="font-bold text-xl">Delivery Address</h3>
                         <section>
                             <p>12 Brewster Lane</p>
                             <p>Steepville</p>
                             <p>TE 67894</p>
-                            <a href="#">Change address</a>
+                            <a class="underline text-red-400" href="#">Change address</a>
                         </section>
                     </section>
                     
                     <!-- PAYMENT -->
-                    <section>
+                    <section class="border-2 border-yellow-600 p-3 my-3">
                         <h3 class="font-bold text-xl">Payment Method</h3>
                         <section>
                             <section>
@@ -116,21 +117,21 @@
                                     <img src="img/logo_mastercard.png" alt="mastercard"/>
                                 </section>
                             </section>
-                            <a href="#">Change payment method</a>
+                            <a class="underline text-red-400" href="#">Change payment method</a>
                         </section>
                     </section>
                     
                 </fieldset>
                 
                 <!-- SAVE BUTTON -->
-                <input class="w-full bg-yellow-700 text-white font-bold text-xl rounded" type="submit" value="Save Preferences"/>
+                <input class="lg:w-3/5 lg:mx-auto w-full p-2 bg-yellow-700 text-white font-bold text-xl rounded" type="submit" value="Save Preferences"/>
                 
                 <!-- FORM ICON -->
             
             </main>
         </form>
         <footer class="flex items-center justify-center fill-yellow-600">
-            <svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-480h320-400 80Zm400 120h80v-120h-80v120ZM560-360q33 0 56.5-23.5T640-440v-320H400v16l72 58q2 2 8 16v170q0 8-6 14t-14 6H300q-8 0-14-6t-6-14v-170q0-2 8-16l72-58v-16H240v320q0 33 23.5 56.5T320-360h240ZM360-760h40-40Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-480h320-400 80Zm400 120h80v-120h-80v120ZM560-360q33 0 56.5-23.5T640-440v-320H400v16l72 58q2 2 8 16v170q0 8-6 14t-14 6H300q-8 0-14-6t-6-14v-170q0-2 8-16l72-58v-16H240v320q0 33 23.5 56.5T320-360h240ZM360-760h40-40Z"/></svg>
         </footer>
     </body>
 </html>
